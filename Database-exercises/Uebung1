@@ -1,0 +1,90 @@
+Aufgabe 1.1:
+
+Data: Daten sind Informationen über bestimmte Dinge. Es können Zahlen oder Bilder, oder andere Informationen sein. 
+Metadata: Metadaten sind Daten die Information über andere Daten liefern. Metadaten beschreiben wie andere Daten zu interprätieren und verstehen sind, und welche Struktur sie haben
+Database: Eine Datenbank ist eine organisierte Sammlung von Daten. Man kann Daten effizient und strukturiert aufrufen und speichern.
+Miniworld: Ein Ausschnitt der realen Welt der modeliert wird. Die Miniwelt der Datenbank eines Einkaufsladen kann so z.b. aus Produkten, Preisen, Inhaltsangaben bestehen.
+DBMS:Ein DBMS ist ein System dass den Zugriff und die Verwaltung von Daten ermöglicht. Es besteht aus mehreren Komponenten die z.b. für das Compilen der Querys oder das File Management zuständig sind und zusammen die Effiziente Speicherung und Nutzung der Daten ermöglichen.
+
+
+Aufgabe 1.1:
+
+Databases: 
+Google Maps: Straßendaten, Verkehrsmeldungen, Daten des ÖPNV's  -> Verkehrsnetz
+Online Shops: Produkte, Preise, Anbieter, Entfernung etc. -> Handel/ Verkaufsprozess
+Arzt: Krankenkassendaten, Personenbezogene Daten etc.  -> Medizinische Daten der Patienten
+
+
+Aufgabe 1.1:
+Application User: 
+Nutzt eine Application um z.b. Daten einzusehen oder auch kleine Teile der Daten zu ändern. (Z.b. durch das Eintragen in einen Kurs in der Uni) Greift also nur Indirekt auf die Datenbank zu per App.
+Advanced DBS-User: 
+Kann Interacitve Querys nutzen um mehr Infos aus der Datenbank zu ziehen und größere bereiche der Datenbank einsehen oder spezifischere Daten abzufragen.
+Application / Development:
+Entwickelt Programme die die Datenbank nutzen
+Database Admin:
+Regelt die Zugriffskontrolle und Sicherheit und kann die Struktur der Datenbank verändern. 
+
+Aufgabe 1.1:
+3 Abstraktionslevel:
+Conceptual Level:
+Soll die Grundvorstellung was die Datenbank leisten soll zeigen und ist unabhängig von der Konkreten Software für die Datenbank.
+Es soll mithilfe des z.b. ER Modells zusammenhänge klar machen.
+Implementation Level:
+Behandelt die Konkrete implementation mithilfe des Daten Modells -> z.b. welchen Datentyp haben bestimmte Werte
+Physical Level:
+Daten sollen möglichst effizient gespeichert werden und performance soll maximiert werden
+
+
+Aufgabe 1.2:
+
+Informelle Querys und Updates:
+
+- Nenne alle Studenten die Faith and Knowledge als Kurs haben
+- Nenne mir alle Professoren die Fundamental Principles lehren
+- Nenne mir alle Kurse die der Student Namens Fichte hat
+
+Updates:
+- Füge Student Franz mit Nummer 23456 hinzu
+- Lösche den Professor Frege aus dem System
+- Füge hinzu dass Student Jonas Kurs Fundamental Principles nimmt
+
+Aufgabe 1.3:
+Data Model: Ein Data Model ist eine Beschreibung der Datenobjekte und der möglichen Operationen auf diesen Objekten.
+Database Schema: 
+Ein Database Schema definiert die Struktur und Organisation von Daten in einer Datenbank. Es zeigt wie Daten gespeichert werden und was die Beziehung zwischen Datenmengen ist. 
+Data Independence: 
+Data Independence meint dass die unabhängigkeiten von Applicationen gegenüber Änderungen an der Definition und Organisation von Daten. 
+Logisch: Wenn das logische schema der Daten geändert werden kann ohne dass der User View verändert wird. Also dass z.b. neue Attribute hinzugefügt werden können.
+Physisch: Wenn das Ändern der Speicherart nichts für den User ändert. 
+-> Änderungen auf einem niedrigeren Level sind ändern nix an höheren Leveln. 
+
+1.3 Warum nützlich?:
+-> Effiziente Speicherung, Mehrbenutzerzugriff möglich, Redundanz reduzieren, Datensicherheit und Konsistenz,
+Probleme: Daten sind verteilt und die Abfrage ist kompliziert und aufwendig
+Es ist schwerer zu Regeln wer zugriff auf welche Daten hat
+Inkonsistenz: Es muss sichergestellt werden dass Daten überall gleich sind und eine Änderung in jedem Speicherort vorkommt.
+
+1.3 Wann normale Datenspeicherung Sinnvoll?
+-> Falls es sich um kleine Datenmengen handelt und die verwendung eines DBS die Nutzung der Daten viel aufwendiger macht / nicht viel Rechenleistung verfügbar ist.
+Z.b. bei eingebetteten Systemen oder kleinen Applicationen 
+
+
+1.3 DDL und DML:
+DDL = Data Definition Language, kann die Struktur der Daten in der Datenbank ändern. DTD/XML 
+DML = Data Manipulation Language, kann die tatsächlichen Werte ändern. SQL z.b.
+
+
+
+
+Aufgabe 1.4:
+Objekte:
+Power PLants, Substations, consumer, Transmission lines
+Attribute:
+Power Plants: Name, location , Output
+Substation: Name location
+Transmission Line: capacity, length 
+Consumer: Household/ business , Customer ID, name , adress
+Relation:
+PP,Sub : Connected through Transmission line
+Substaction Consumer : Connected 
