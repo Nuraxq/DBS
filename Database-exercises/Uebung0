@@ -1,0 +1,9 @@
+import sqlite3
+
+with sqlite3.connect("uni-db.sqlite3") as conn:
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT Name, Rank FROM Professor")
+    rows = cursor.fetchall() # list of tuples
+    for name, rank in rows:
+        print(f"{name} ({rank})")
