@@ -49,6 +49,12 @@ Updates:
 - Lösche den Professor Frege aus dem System
 - Füge hinzu dass Student Jonas Kurs Fundamental Principles nimmt
 
+Beziehung:
+
+Professor teaches Course
+
+Student attends Course 
+
 Aufgabe 1.3:
 Data Model: Ein Data Model ist eine Beschreibung der Datenobjekte und der möglichen Operationen auf diesen Objekten.
 Database Schema: 
