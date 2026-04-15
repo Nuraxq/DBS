@@ -64,9 +64,9 @@ schopenhauer lehrt fundamental principles und faith und knowledge
 
 
 Aufgabe 1.3:
-Data Model: Ein Data Model ist eine Beschreibung der Datenobjekte und der möglichen Operationen auf diesen Objekten.
+Data Model: Ein Data Model ist eine Beschreibung der Datenobjekte und der möglichen Operationen auf diesen Objekten. Es liegt fest wie die Struktur der Daten ist und wie sie organisiert sind
 Database Schema: 
-Ein Database Schema definiert die Struktur und Organisation von Daten in einer Datenbank. Es zeigt wie Daten gespeichert werden und was die Beziehung zwischen Datenmengen ist. 
+Ein Database Schema Ein Database Schema ist der entwurf einer Datenbank für einen  konkreten Anwendungsfall. Es wird z.B. festgelegt welchen Typ bestimmte Daten haben oder welche Namen die Tabellen haben
 Data Independence: 
 Data Independence meint dass die unabhängigkeiten von Applicationen gegenüber Änderungen an der Definition und Organisation von Daten. 
 Logisch: Wenn das logische schema der Daten geändert werden kann ohne dass der User View verändert wird. Also dass z.b. neue Attribute hinzugefügt werden können.
