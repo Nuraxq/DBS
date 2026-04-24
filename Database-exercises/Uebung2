@@ -1,0 +1,22 @@
+Aufgabe 2.1
+A)
+Entität: Ein Gedankenobjekt oder ein Objekt in der echten Welt. 
+Attribute: Eine Eigenschaft oder ein Fakt über eine Sache oder Relation. z.b. Kann ein Mensch einen Namen besitzen, welcher dann als Attribut aufgeführt wird.
+Attribute value: Das ist der konkrete Wert eines Attributes, also z.B. für das Attribute Name könnte der Value „Thomas“ sein.
+Relationship: Beziehung zwischen zwei oder mehr Entities die beschreibt was für ein Verhältnis diese haben. So kann z.B. die Relationship „owns“ vorliegen für die Entitäten Mensch und Fahrrad. 
+Key Attribute: ein Attribut dass die Instanz einer Entität eindeutig identifiziert. -> Key Attributes pro Entität einzigartig 
+B)
+Ein Entity Type beschreibt eine Menge an Entitäten die alle die gleichen Attribute besitzen.
+Ein Entity Set ist eine Sammlung aller vorhandenen Entitäten die zu einem bestimmten Zeitpunkt existieren.
+Ein Entity Type ist also nur eine Struktur welche Attribute vorliegen müssen um einen Bestimmten Typ zu haben, ein Set ist eine Sammlung verschiedener Entitäten die einem Typ zugehören. 
+C)
+Ja einer Weak Entity kann eine Relation zu mehreren strong Entities haben, jedoch nur zu einer die sie identifiziert. 
+Sie dürfen auch eine Relation zu anderen Weak entities haben -> das schwach sein stellt keine direkte Einschränkung da
+D)
+Role Names sind wichtig für eine Relation wenn die Reihenfolge eines Tupels einen unterschied auf die Beziehung macht und vorallem wenn sich eine Entität selbst in einer Relation hat. Diese Rolenames ermöglichen eine eindeutige Zuordnung und eine Klarheit welche Rolle eine Entität in dier Relation spielt. 
+
+Aufgabe 2.2: 
+Die Miniwelt stellt einen Online Shop da. In diesem gibt es verschiedene Artikel, welche entweder Software oder Hardware sein können. Jeder Artikel bestitzt einen Namen, Preis, und eine Produktgruppe. Software Artikel besitzen zusätzlich einen Provider, Hardware Artikel einen Lagerort. Artikel können in einer Order bestellt werden. Eine Order besitzt eine Anzahl, und in es kann ein Discount Voucher vorkommen. Diese besitzen einen Aktivierungscode und eine Prozentzahl an Rabatt. 
+Eine Order wird zusätzlich durch ein Zustellstatus, ein Datum und eine Bezahlbestätigung beschrieben. Eine Order besteht aus mindestens 2 Artikeln, wobei discount Voucher nicht zwangsweise notwendig sind, jedoch auch beliebig viele vorkommen können. Artikel müssen nicht in einer Order vorhanden sein.
+Ein Customer bestellt eine Order. Dabei ist pro Order nur ein Customer involviert, jeder Customer kann aber beliebig viel Ordern. Customer besitzen einen Namen und eine Adresse. ^
+B)
