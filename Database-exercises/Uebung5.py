@@ -118,6 +118,25 @@ Answer:
 Keiner 
 
 
+
+
+SELECT c.CouNo, c.Title
+FROM Course c
+JOIN requires r ON c.CouNo = r.Successor
+WHERE r.Predecessor NOT IN (SELECT CouNo FROM Course)
+
+UNION
+
+SELECT c.CouNo, c.Title
+FROM Course c
+JOIN requires r ON c.CouNo = r.Predecessor
+WHERE r.Successor NOT IN (SELECT CouNo FROM Course);
+
+Antowrt: keiner
+
+
+
+
 SELECT Name,Title from attends JOIN Student on attends.StuNo = student.StuNo join Course on course.CouNo = attends.CouNo 
 Answer: 
 Fichte	Fundamental Principles
